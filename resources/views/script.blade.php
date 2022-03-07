@@ -1,5 +1,5 @@
 <script>
-  const BASEURL = 'http://127.0.0.1:8000';
+  const BASEURL = location.href.slice(0, location.href.length-1);
   var apiList = [
     { key: 'login', header: false },
     { key: 'logout', header: true },
