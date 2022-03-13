@@ -30,7 +30,7 @@ class PostController extends Controller
                     $query->where('id', '>', $lastId);
                   })
                   ->with('user')
-                  ->orderBy('id', 'asc')
+                  ->orderBy('id', 'desc')
                   ->limit(20)
                   ->get();
 
@@ -39,6 +39,7 @@ class PostController extends Controller
 
   public function show(Request $request, $postId) {
     $post = Post::where('id', $postId)
+                ->with('user')
                 ->first();
 
     if (!$post) {
