@@ -29,6 +29,7 @@ class PostController extends Controller
     $posts = Post::when($lastId, function($query) use ($lastId) {
                     $query->where('id', '>', $lastId);
                   })
+                  ->with('user')
                   ->orderBy('id', 'asc')
                   ->limit(20)
                   ->get();

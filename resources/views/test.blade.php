@@ -11,11 +11,11 @@
   <label class="text-warning">POST</label>
   <span>/api/login</span> <em class="blockquote-footer">Login User</em>
   <div class="form-group mt-2">
-    <label for="login-email">Email Address</label>
+    <label for="login-email">Email Address: <i>(email)</i></label>
     <input name="email" type="email" class="form-control" id="login-email" placeholder="Enter email">
   </div>
   <div class="form-group mt-2">
-    <label for="login-password">Password</label>
+    <label for="login-password">Password <i>(password)</i></label>
     <input name="password" type="password" class="form-control" id="login-password" placeholder="Enter Password">
   </div>
 </form>
@@ -24,7 +24,7 @@
   <label class="text-warning">POST</label>
   <span>/api/logout</span> <em class="blockquote-footer">Logout User</em>
   <div class="form-group mt-2">
-    <label for="logout-token">Bearer Token</label>
+    <label for="logout-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="logout-token" placeholder="Enter Token">
   </div>
 </form>
@@ -33,22 +33,22 @@
   <label class="text-warning">POST</label>
   <span>/api/register</span> <em class="blockquote-footer">Create new account</em>
   <div class="form-group mt-2">
-    <label for="register-firstname">First Name</label>
+    <label for="register-firstname">First Name <i>(firstname)</i></label>
     <input name="firstname" type="text" class="form-control" id="register-firstname" placeholder="Enter First Name">
   </div>
   
   <div class="form-group mt-2">
-    <label for="register-lastname">Last Name</label>
+    <label for="register-lastname">Last Name <i>(lastname)</i></label>
     <input name="lastname" type="email" class="form-control" id="register-lastname" placeholder="Enter Last Name">
   </div>
 
   <div class="form-group mt-2">
-    <label for="register-email">Email Address</label>
+    <label for="register-email">Email Address <i>(email)</i></label>
     <input name="email" type="email" class="form-control" id="register-email" placeholder="Enter email">
   </div>
 
   <div class="form-group mt-2">
-    <label for="register-password">Password</label>
+    <label for="register-password">Password <i>(password)</i></label>
     <input name="password" type="password" class="form-control" id="register-password" placeholder="Enter Password">
   </div>
 </form>
@@ -57,7 +57,7 @@
   <label class="text-success">GET</label>
   <span>/api/users</span> <em class="blockquote-footer">Get all users</em>
   <div class="form-group mt-2">
-    <label for="users-token">Bearer Token</label>
+    <label for="users-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="users-token" placeholder="Enter Token">
   </div>
 </form>
@@ -66,12 +66,12 @@
   <label class="text-success">GET</label>
   <span>/api/user/<span id="users-show-id-span">{id}</span></span> <em class="blockquote-footer">Get user by ID</em>
   <div class="form-group mt-2">
-    <label for="users-show-token">Bearer Token</label>
+    <label for="users-show-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="users-show-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="users-show-id">User ID</label>
+    <label for="users-show-id">User ID <i>(id)</i></label>
     <input name="id" type="number" class="form-control idChange" id="users-show-id" placeholder="Enter User ID">
   </div>
 </form>
@@ -80,7 +80,7 @@
   <label class="text-danger">DELETE</label>
   <span>/api/user</span> <em class="blockquote-footer">Delete user by token</em>
   <div class="form-group mt-2">
-    <label for="users-delete-token">Bearer Token</label>
+    <label for="users-delete-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="users-delete-token" placeholder="Enter Token">
   </div>
 </form>
@@ -89,27 +89,27 @@
   <label class="text-info">PUT</label>
   <span>/api/user</span> <em class="blockquote-footer">Update user by token</em>
   <div class="form-group mt-2">
-    <label for="users-edit-token">Bearer Token</label>
+    <label for="users-edit-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="users-edit-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="users-edit-firstname">First Name</label>
+    <label for="users-edit-firstname">First Name <i>(firstname)</i></label>
     <input name="firstname" type="text" class="form-control" id="users-edit-firstname" placeholder="Enter First Name">
   </div>
   
   <div class="form-group mt-2">
-    <label for="users-edit-lastname">Last Name</label>
+    <label for="users-edit-lastname">Last Name <i>(lastname)</i></label>
     <input name="lastname" type="email" class="form-control" id="users-edit-lastname" placeholder="Enter Last Name">
   </div>
 
   <div class="form-group mt-2">
-    <label for="users-edit-email">Email Address</label>
+    <label for="users-edit-email">Email Address <i>(email)</i></label>
     <input name="email" type="email" class="form-control" id="users-edit-email" placeholder="Enter email">
   </div>
 
   <div class="form-group mt-2">
-    <label for="users-edit-password">Password</label>
+    <label for="users-edit-password">Password <i>(password)</i></label>
     <input name="password" type="password" class="form-control" id="users-edit-password" placeholder="Enter Password">
   </div>
 </form>
@@ -118,12 +118,12 @@
   <label class="text-warning">POST</label>
   <span>/api/post</span> <em class="blockquote-footer">Create new Post</em>
   <div class="form-group mt-2">
-    <label for="form-post-token">Bearer Token</label>
+    <label for="form-post-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="form-post-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="form-post-post">Post</label>
+    <label for="form-post-post">Post <i>(post)</i></label>
     <input name="post" type="text" class="form-control" id="form-post-post" placeholder="Enter Post">
   </div>
 </form>
@@ -132,8 +132,13 @@
   <label class="text-success">GET</label>
   <span>/api/posts</span> <em class="blockquote-footer">Get all Posts</em>
   <div class="form-group mt-2">
-    <label for="form-posts-token">Bearer Token</label>
+    <label for="form-posts-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="form-posts-token" placeholder="Enter Token">
+  </div>
+
+  <div class="form-group mt-2">
+    <label for="form-posts-lastId">Last ID <i>(lastId)</i></label>
+    <input name="lastId" type="number" class="form-control" id="form-posts-lastId" placeholder="Optional: Last ID">
   </div>
 </form>
 
@@ -141,12 +146,12 @@
   <label class="text-success">GET</label>
   <span>/api/post/<span id="form-post-show-id-span">{id}</span></span> <em class="blockquote-footer">Get Post by ID</em>
   <div class="form-group mt-2">
-    <label for="form-post-show-token">Bearer Token</label>
+    <label for="form-post-show-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="form-post-show-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="form-post-show-id">Post ID</label>
+    <label for="form-post-show-id">Post ID <i>(id)</i></label>
     <input name="id" type="number" class="form-control idChange" id="form-post-show-id" placeholder="Enter Post ID">
   </div>
 </form>
@@ -155,17 +160,17 @@
   <label class="text-info">PUT</label>
   <span>/api/post/<span id="form-post-edit-id-span">{id}</span></span> <em class="blockquote-footer">Update Post by ID</em>
   <div class="form-group mt-2">
-    <label for="form-post-edit-token">Bearer Token</label>
+    <label for="form-post-edit-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="form-post-edit-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="form-post-edit-id">Post ID</label>
+    <label for="form-post-edit-id">Post ID <i>(id)</i></label>
     <input name="id" type="number" class="form-control idChange" id="form-post-edit-id" placeholder="Enter Post ID">
   </div>
 
   <div class="form-group mt-2">
-    <label for="form-post-edit-post">Post</label>
+    <label for="form-post-edit-post">Post <i>(post)</i></label>
     <input name="post" type="text" class="form-control" id="form-post-edit-post" placeholder="Enter Post">
   </div>
 </form>
@@ -174,12 +179,12 @@
   <label class="text-danger">DELETE</label>
   <span>/api/post/<span id="form-post-delete-id-span">{id}</span></span> <em class="blockquote-footer">Delete Post by ID</em>
   <div class="form-group mt-2">
-    <label for="form-post-delete-token">Bearer Token</label>
+    <label for="form-post-delete-token">Bearer Token <i>(add this to header as Bearer Token)</i></label>
     <input name="token" type="text" class="form-control" id="form-post-delete-token" placeholder="Enter Token">
   </div>
 
   <div class="form-group mt-2">
-    <label for="form-post-delete-id">Post ID</label>
+    <label for="form-post-delete-id">Post ID <i>(id)</i></label>
     <input name="id" type="number" class="form-control idChange" id="form-post-delete-id" placeholder="Enter Post ID">
   </div>
 </form>
