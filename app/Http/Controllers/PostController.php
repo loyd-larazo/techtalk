@@ -27,7 +27,7 @@ class PostController extends Controller
   public function index(Request $request) {
     $lastId = $request->get('lastId');
     $posts = Post::when($lastId, function($query) use ($lastId) {
-                    $query->where('id', '>', $lastId);
+                    $query->where('id', '<', $lastId);
                   })
                   ->with('user')
                   ->orderBy('id', 'desc')
