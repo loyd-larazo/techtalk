@@ -76,7 +76,7 @@
   <body class="antialiased">
     <div class="">
       <div class="row m-0 mt-2">
-        <div class="col-5">
+        <div class="col-5 m-0 p-0">
           <div class="api-list">
             <h4>API Endpoint</h4>
             <div class="w-100 overflow-auto api-endpoints">
@@ -87,7 +87,7 @@
             @include('test')
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-7 m-0 p-0">
           <div class="results">
             <h4>Output</h4>
             <pre id="result"></pre>
